@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 export const ListaTarefasContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,6 +11,20 @@ export const ListaTarefasContainer = styled.div`
   box-shadow: -2px 3px 30px -7px rgba(0, 0, 0, 0.75);
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
+`;
+
+export const TarefaCompleta = styled.li`
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 1rem;
+border: 1px solid grey;
+border-radius: 10px;
+padding: 6px 8px;
+transition: background-color 0.3s;
+&:hover {
+  background-color: lightblue;
+}
 `;
 
 export const InputContainer = styled.div`
